@@ -2,8 +2,8 @@ using System;
 
 namespace _1labasharpcoderev2 {
     public class Time {
-        private byte hours;
-        private byte minutes;
+        private byte _hours;
+        private byte _minutes;
 
         public byte Hours {
             get => hours;
