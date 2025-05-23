@@ -5,8 +5,11 @@ namespace _1labasharpcoderev {
     public string Text { get; set; }
 
     // Конструктор с проверкой на пустую строку
-    public FirstClass(string text) {
-      Text = text ?? string.Empty;
+    public FirstClass(FirstClass other) {
+      if (other == null) {
+        throw new ArgumentNullException(nameof(other));
+      }
+      Text = other.Text;
     }
 
     // Конструктор копирования
