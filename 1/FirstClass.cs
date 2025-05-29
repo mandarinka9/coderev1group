@@ -17,7 +17,6 @@ namespace _1labasharpcoderev {
       if (other == null) {
         throw new ArgumentNullException(nameof(other));
       }
-
       Text = other.Text;
     }
 
@@ -26,10 +25,9 @@ namespace _1labasharpcoderev {
       if (string.IsNullOrWhiteSpace(Text)) {
         return string.Empty;
       }
-
       return $"{Text[0]}{Text[Text.Length - 1]}";
     }
-
+    
     public override string ToString() {
       return $"Text: {Text}";
     }
