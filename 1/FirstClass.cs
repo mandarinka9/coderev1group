@@ -5,10 +5,8 @@ namespace _1labasharpcoderev {
     public string Text { get; set; }
 
     // Конструктор с проверкой на пустую строку
-  public FirstClass(string text)
-{
-  if (text == null
-    {
+  public FirstClass(string text) {
+    if (text == null) {
       throw new ArgumentNullException(nameof(text));
     }
     Text = text;
